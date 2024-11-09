@@ -7,6 +7,46 @@
   <title>Student Enrollment Form</title>
 </head>
 <body>
-    
+<div class="container d-flex flex-column align-items-center">
+    <h2 class="text-center my-4">Student Enrollment And Grade Processing System</h2>
+
+    <form id="enrollmentForm" action="#" method="post" onsubmit="showGradeForm(event)" class="w-100 w-md-75 w-lg-50">
+      <h5>Student Enrollment Form</h5>
+
+      <div class="mb-3">
+        <label for="first_name">First Name</label>
+        <input type="text" id="first_name" name="first_name" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="last_name">Last Name</label>
+        <input type="text" id="last_name" name="last_name" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label>Gender:</label>
+        <div>
+          <input type="radio" id="male" name="gender" value="Male" required checked>
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="Female" required>
+          <label for="female">Female</label>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="course">Course</label>
+        <select id="course" name="course" class="form-select" required>
+          <option value="BSIT" checked>BSIT</option>
+          <option value="BSHRM">BSHRM</option>
+          <option value="BSBA">BSBA</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary w-10">Submit Student Information</button>
+    </form>
 </body>
 </html>
